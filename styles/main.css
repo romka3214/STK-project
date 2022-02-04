@@ -204,7 +204,7 @@ header .navbar_menu .extend-menu {
   pointer-events: none;
   position: absolute;
   left: -20px;
-  top: 100%;
+  top: 43px;
   background-color: #f5fbfe;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -229,6 +229,9 @@ header .navbar_menu .navbar_extended_box .arrow-first-link {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+header .navbar_menu .navbar_extended_box .arch_link-extend_menu {
+  padding-bottom: 49px;
+}
 header .navbar_menu .extend-menu-second {
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
@@ -237,7 +240,7 @@ header .navbar_menu .extend-menu-second {
   pointer-events: none;
   position: absolute;
   left: 225px;
-  top: 100%;
+  top: 43px;
   background-color: #f5fbfe;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -919,6 +922,9 @@ header .navbar_menu .navbar_menu-item > .navbar_extended_box:hover .arrow-second
 .thanks_mail {
   height: 581px;
   padding-top: 85px;
+  z-index: 15;
+  position: relative;
+  background-color: #fff;
 }
 .thanks_mail .container {
   position: relative;
@@ -1120,7 +1126,156 @@ header .navbar_menu .navbar_menu-item > .navbar_extended_box:hover .arrow-second
 }
 
 .contacts {
-  height: 90vh;
+  min-height: 863px;
+  position: relative;
+}
+.contacts #map {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  top: 0;
+  z-index: 15;
+}
+.contacts .white_blank {
+  background: #fff;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 0;
+}
+.contacts .white_blank .white_blank_box {
+  margin: 86px 0px 106px 108px;
+}
+.contacts .white_blank .white_blank_box h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.contacts .white_blank .white_blank_box p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  max-width: 412px;
+  margin-bottom: 45px;
+}
+.contacts .white_blank .white_blank_box .address {
+  max-width: 421px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 25px;
+  height: 50px;
+}
+.contacts .white_blank .white_blank_box .address img {
+  margin-right: 15px;
+  margin-top: 5px;
+  height: 25px;
+}
+.contacts .white_blank .white_blank_box .phone_numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 90px;
+}
+.contacts .white_blank .white_blank_box .phone_numbers span {
+  color: #3bb9ff;
+  font-size: 24px;
+  font-weight: bold;
+}
+.contacts .white_blank .white_blank_box .phone_numbers img {
+  margin-right: 15px;
+  margin-top: 2px;
+  height: 25px;
+}
+.contacts .white_blank .white_blank_box .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 50px;
+}
+.contacts .white_blank .white_blank_box .email span {
+  color: #3bb9ff;
+}
+.contacts .white_blank .white_blank_box .email img {
+  margin-right: 15px;
+  height: 25px;
+}
+.contacts .white_blank .white_blank_box .clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.contacts .white_blank .white_blank_box .clock img {
+  margin-left: 2px;
+  margin-right: 15px;
+  margin-top: 5px;
+  width: 22px;
+}
+.contacts .white_blank .white_blank_box .clock span {
+  color: #909090;
+  font-size: 14px;
+}
+.contacts .white_blank .white_blank_box .download {
+  font-size: 18px;
+  color: #fff;
+  background: #3bb9ff;
+  border-radius: 5px;
+  border: 0px;
+  padding: 20px 20px 20px 30px;
+  width: 500px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.contacts .white_blank .white_blank_box .download img {
+  position: relative;
+  top: -5px;
+}
+.contacts .white_blank .white_blank_box .save {
+  border-radius: 2px;
+  border: 1px solid #3bb9ff;
+  height: 108px;
+  width: 426px;
+  padding-top: 26px;
+  padding-left: 30px;
+  padding-right: 34px;
+}
+.contacts .white_blank .white_blank_box .save .shortcut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+.contacts .white_blank .white_blank_box .save .shortcut .big_blue {
+  color: #3bb9ff;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 49px;
+  width: 215px;
 }
 
 footer {

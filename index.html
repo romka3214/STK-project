@@ -8,6 +8,10 @@
     <title>Document</title>
     <link href="styles/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&width=100%&height=863&lang=ru_RU"
+        type="text/javascript"></script>
+    <!-- <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Fjkc9H0g3D7KykHB9pdznEWUplxAbBRv&width=100%&height=240&lang=ru_UA&sourceType=constructor"></script> -->
+
 </head>
 
 <body>
@@ -517,7 +521,39 @@
         </div>
     </section>
     <section class="contacts">
-
+        <div class="container">
+            <div id="map" style="width: 50%; height: 863px;"></div>
+            <div class="white_blank">
+                <div class="white_blank_box">
+                    <h2>Контакты</h2>
+                    <p>Общество с ограниченной ответственностью «СТК-Проект»</p>
+                    <div class="address">
+                        <img src="img/bi_geo-alt.svg" alt="">
+                        <p>Адрес: 450077, Республика Башкортостан, г. Уфа, ул. Коммунистическая, 80, к. 337, 338</p>
+                    </div>
+                    <div class="phone_numbers">
+                        <img src="img/icons8_phone.svg" alt="">
+                        <p>Телефоны: <br> <span class="phone_number">8 (937) 366-07-85 <br>8 (917) 406-54-02</span></p>
+                    </div>
+                    <div class="email">
+                        <img src="img/fluent_mail-24-regular.svg" alt="">
+                        <p>Эл. почта: <span>stk.proekt.ufa@gmail.com</span></p>
+                    </div>
+                    <div class="clock">
+                        <img src="img/Vector.svg" alt="">
+                        <p>Пн-Cб 08:00 - 20:00 <br><span>Вс выходной</span></p>
+                    </div>
+                    <button class="download">Скачать карту партнера <img src="img/bi_download.svg" alt=""></button>
+                    <div class="save">
+                        <span>Сохраните наш сайт, чтобы его не потерять💗</span>
+                        <div class="shortcut">
+                            <span>Нажмите на клавиатуре сочетание клавиш</span>
+                            <span class="big_blue">CTRL + D</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
         <div class="container">
@@ -532,8 +568,8 @@
                     <a href="">Политика конфиденциальности</a>
                     <img src="img/fidjiWEB.svg" alt="">
                 </div>
-                
-                
+
+
             </div>
         </div>
     </footer>

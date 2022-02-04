@@ -105,3 +105,33 @@ var swiper4 = new Swiper('.swiper.four', {
         },
     },
 });
+
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    let center = [54.72458806994081,55.95604791534424];
+
+    function init() {
+        let map = new ymaps.Map('map', {
+            center: center,
+            zoom: 17
+        });
+
+        let placemark = new ymaps.Placemark(center,{},{
+            iconLayout: 'default#image',
+            iconImageHref: 'img/geomark.svg',
+            iconImageSize: [80,80],
+            iconImageOffset: [-47,-76]
+        });
+      
+      map.controls.remove('geolocationControl'); 
+      map.controls.remove('searchControl'); 
+      map.controls.remove('trafficControl'); 
+      map.controls.remove('typeSelector'); 
+      map.controls.remove('fullscreenControl'); 
+      map.controls.remove('zoomControl');
+      map.controls.remove('rulerControl'); 
+    map.geoObjects.add(placemark);
+      
+    }
+
+    ymaps.ready(init);
