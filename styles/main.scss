@@ -1,3 +1,4 @@
+@import '../fonts/stylesheet.css';
 * {
   padding: 0;
   margin: 0;
@@ -12,6 +13,10 @@ body {
   font-family: Proxima Nova, sans-serif;
 }
 
+img {
+  pointer-events: none;
+}
+
 .container {
   height: 100%;
   margin: 0 auto;
@@ -21,7 +26,7 @@ body {
 button {
   transition: ease 0.3s;
   &:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 10px rgba(99, 99, 99, 0.8);
     transition: ease 0.3s;
   }
 }
@@ -57,6 +62,11 @@ header {
     .navbar_item-phones > span {
       font-size: 16px;
       color: #000;
+      a{
+        color: #000;
+        text-decoration: none;
+        font-weight: 400;
+      }
     }
     .navbar_item-phones > svg {
       margin-left: 10px;
@@ -364,6 +374,9 @@ header {
         text-decoration: none;
         color: #909090;
         font-size: 14px;
+        &:hover {
+          color: #1a1a1a;
+        }
       }
     }
     .breadcrumbs {
@@ -378,6 +391,7 @@ header {
     }
     .button_mdl_blue {
       font-size: 18px;
+      font-family: Proxima Nova, sans-serif;
       background: linear-gradient(270deg, #3cb9ff 0%, #00a3ff 100%);
       border: 0px;
       color: #fff;
@@ -390,6 +404,7 @@ header {
     }
     .button_mdl_white {
       font-size: 18px;
+      font-family: Proxima Nova, sans-serif;
       background: #fff;
       border: 1px #3cb9ff solid;
       color: #000;
@@ -472,16 +487,20 @@ header {
     }
     .swiper-button-prev.sec {
       position: relative !important;
-      top: -350px;
+      top: -368px;
       left: 0;
       display: block;
+      width: 61px;
+      height: 61px;
     }
     .swiper-button-next.sec {
       position: relative !important;
       transform: rotate(180deg);
-      top: -350px;
-      right: -1200px;
+      top: -410px;
+      right: -94%;
       display: block;
+      width: 61px;
+      height: 61px;
     }
     .stars_el {
       position: absolute;
@@ -560,6 +579,7 @@ header {
       top: 0px;
       right: -400px;
       z-index: 4;
+      pointer-events: none;
     }
   }
   .border_box {
@@ -603,6 +623,7 @@ header {
             font-size: 18px;
             line-height: 22px;
             outline: 1px black;
+            font-family: Proxima Nova, sans-serif;
           }
           .select_after {
             position: relative;
@@ -616,6 +637,7 @@ header {
               outline: 1px black;
               appearance: none;
               overflow: hidden;
+              font-family: Proxima Nova, sans-serif;
             }
             &::after {
               content: "";
@@ -643,6 +665,7 @@ header {
             text-align: center;
             cursor: pointer;
             transition: ease 0.3s;
+            font-family: Proxima Nova, sans-serif;
           }
           &:last-child {
             position: relative;
@@ -679,8 +702,10 @@ header {
     }
     .buttons {
       margin: 0 auto;
-      width: 340px;
+      width: 100%;
+      text-align: center;
       .button_mdl_blue {
+        font-family: Proxima Nova, sans-serif;
         font-size: 18px;
         background: linear-gradient(270deg, #3cb9ff 0%, #00a3ff 100%);
         border: 0px;
@@ -693,6 +718,7 @@ header {
         }
       }
       .button_mdl_white {
+        font-family: Proxima Nova, sans-serif;
         font-size: 18px;
         background: #fff;
         border: 1px #3cb9ff solid;
@@ -857,13 +883,17 @@ header {
       top: -181px;
       left: 0;
       display: block;
+      width: 61px;
+      height: 61px;
     }
     .swiper-button-next.four {
       position: relative !important;
       transform: rotate(180deg);
-      top: -181px;
-      right: -1185px;
+      top: -220px;
+      right: -94%;
       display: block;
+      width: 61px;
+      height: 61px;
     }
     .swiper-pagination.four {
       bottom: 85px;
@@ -950,6 +980,7 @@ header {
                 margin-bottom: 10px;
               }
               textarea {
+                font-family: Proxima Nova, sans-serif;
                 padding: 15px 17px;
                 font-size: 18px;
                 line-height: 22px;
@@ -973,6 +1004,7 @@ header {
                 margin-bottom: 10px;
               }
               input {
+                font-family: Proxima Nova, sans-serif;
                 width: 333px;
                 height: 22px;
                 border: 0px;
@@ -994,6 +1026,7 @@ header {
                   outline: 1px black;
                   appearance: none;
                   overflow: hidden;
+                  font-family: Proxima Nova, sans-serif;
                 }
                 &::after {
                   content: "";
@@ -1021,6 +1054,7 @@ header {
                 cursor: pointer;
                 transition: ease 0.3s;
                 margin-top: 20px;
+                font-family: Proxima Nova, sans-serif;
               }
             }
           }
@@ -1049,6 +1083,7 @@ header {
     top: 0;
     .white_blank_box {
       margin: 86px 0px 106px 108px;
+
       h2 {
         font-weight: 600;
         font-size: 36px;
@@ -1057,7 +1092,7 @@ header {
         margin-bottom: 12px;
       }
       p {
-        font-weight: normal;
+        font-weight: 500;
         font-size: 18px;
         line-height: 22px;
         max-width: 412px;
@@ -1069,6 +1104,7 @@ header {
         align-items: flex-start;
         margin-bottom: 25px;
         height: 50px;
+        font-weight: 500;
         img {
           margin-right: 15px;
           margin-top: 5px;
@@ -1076,6 +1112,7 @@ header {
         }
       }
       .phone_numbers {
+        font-weight: 500;
         display: flex;
         align-items: flex-start;
         height: 90px;
@@ -1083,6 +1120,10 @@ header {
           color: #3bb9ff;
           font-size: 24px;
           font-weight: bold;
+          a{
+            text-decoration: none;
+            color: #3bb9ff;
+          }
         }
         img {
           margin-right: 15px;
@@ -1091,18 +1132,25 @@ header {
         }
       }
       .email {
+        font-weight: 500;
         display: flex;
         align-items: flex-start;
         height: 50px;
-        span{
-            color: #3bb9ff;;
+        a {
+          text-decoration: none;
+          color: #3bb9ff;
+          span {
+            color: #3bb9ff;
+          }
         }
+
         img {
           margin-right: 15px;
           height: 25px;
         }
       }
       .clock {
+        font-weight: 500;
         display: flex;
         align-items: flex-start;
         img {
@@ -1118,6 +1166,8 @@ header {
       }
       .download {
         font-size: 18px;
+        font-weight: bold;
+        font-family: Proxima Nova, sans-serif;
         color: #fff;
         background: #3bb9ff;
         border-radius: 5px;
@@ -1142,9 +1192,9 @@ header {
         padding-left: 30px;
         padding-right: 34px;
         .shortcut {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
           .big_blue {
             color: #3bb9ff;
             font-style: normal;
